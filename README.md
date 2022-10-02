@@ -11,7 +11,7 @@ It has no notion of security or even passwords. Rather, once it is running, ever
 
 ### My modifications ###
 * The root directory is by default the current working directory;
-* Some fixes to be able to compile with GCC in Windows, and run properly (see "\_compile.bat" for details);
+* Some fixes to be able to compile with GCC in Windows, and run properly (see "\_compile.bat" for compiler details);
 * Executable size is 31 kB.
 
 ### Original source ###
