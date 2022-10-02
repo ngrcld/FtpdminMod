@@ -6,6 +6,6 @@
 
 @if exist %~dp0ftpdmin.exe del ftpdmin.exe
 
-gcc.exe ftpdmin.c paths.c -lws2_32 -s -o ftpdmin.exe
+gcc.exe ftpdmin.c paths.c -lws2_32 -Os -s -fno-ident -o ftpdmin.exe
 
 @pause
