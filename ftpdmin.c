@@ -161,7 +161,7 @@ static CmdTypes GetCommand(Inst_t *Conn, char *CmdArg)
     b = 0;
     if (InputString[a++] == ' '){
         for (b=0;b<500-1;b++){
-            if (InputString[a+b] < 32) break;
+            if (InputString[a+b] < 32 && InputString[a+b] >= 0) break;
             CmdArg[b] = InputString[a+b];
         }
     }
@@ -741,6 +741,7 @@ int main (int argc, char **argv)
     ControlPort = 21;
     XferPortStart = XferPortRange = XferPort = 0;
    
+    SetConsoleOutputCP(GetACP());
 
     printf("ftpdmin v. "FTPDMIN_VER"  "FTPDMIN_DATE"\n");
 
