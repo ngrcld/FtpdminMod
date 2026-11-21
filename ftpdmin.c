@@ -741,6 +741,7 @@ int main (int argc, char **argv)
     ControlPort = 21;
     XferPortStart = XferPortRange = XferPort = 0;
    
+    SetConsoleOutputCP(GetACP());
 
     printf("ftpdmin v. "FTPDMIN_VER"  "FTPDMIN_DATE"\n");
 
