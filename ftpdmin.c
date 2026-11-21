@@ -161,7 +161,7 @@ static CmdTypes GetCommand(Inst_t *Conn, char *CmdArg)
     b = 0;
     if (InputString[a++] == ' '){
         for (b=0;b<500-1;b++){
-            if (InputString[a+b] < 32) break;
+            if (InputString[a+b] < 32 && InputString[a+b] >= 0) break;
             CmdArg[b] = InputString[a+b];
         }
     }
